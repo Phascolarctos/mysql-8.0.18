@@ -28,9 +28,9 @@ default-character-set=utf8mb4
 port=3306
 default-character-set=utf8mb4
 ```
-3.cmd进入bin文件夹下
-4.mysqld --initilize --console 生成密码
-5.mysqld install 安装
-6.mysql -u root -p 登录
+3.cmd进入bin文件夹下  
+4.mysqld --initilize --console 生成密码  
+5.mysqld install 安装  
+6.mysql -u root -p 登录  
 
 注意事项：以管理员权限启动cmd，否则第五步报错。
