@@ -3,6 +3,12 @@
 2.解压到指定目录。
 在D:\EnvRun\mysql-8.0.18-winx64目录下新建my.ini
 (```)
+    function fun(){
+         echo "这是一句非常牛逼的代码";
+    }
+    fun();
+(```)
+(```)
 [mysqld]
 # 设置3306端口
 port=3306
