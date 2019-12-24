@@ -1,6 +1,7 @@
 # 安装mysql-8.0.18
 1.下载，https://dev.mysql.com/downloads/mysql/  
 2.解压到指定目录，在D:\EnvRun\mysql-8.0.18-winx64目录下新建my.ini  
+```
 [mysqld]
 # 设置3306端口
 port=3306
@@ -26,7 +27,7 @@ default-character-set=utf8mb4
 # 设置mysql客户端连接服务端时默认使用的端口
 port=3306
 default-character-set=utf8mb4
-(```)
+```
 3.cmd进入bin文件夹下
 4.mysqld --initilize --console 生成密码
 5.mysqld install 安装
