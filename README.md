@@ -29,8 +29,10 @@ port=3306
 default-character-set=utf8mb4
 ```
 3.cmd进入bin文件夹下  
-4.mysqld --initilize --console 生成密码  
+4.mysqld --initialize --user=root --console 生成密码  
 5.mysqld install 安装  
-6.mysql -u root -p 登录  
-
+6.net start mysql 启动  
+7.mysql -u root -p 登录  
+8.ALTER USER 'root'@'localhost' IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY '新密码';  
+9.
 注意事项：以管理员权限启动cmd，否则第五步报错。
