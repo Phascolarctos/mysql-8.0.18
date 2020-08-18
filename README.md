@@ -34,4 +34,5 @@ default-character-set=utf8mb4
 6.net start mysql 启动  
 7.mysql -u root -p 登录  
 8.ALTER USER 'root'@'localhost' IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY '新密码';  
+9.FLUSH PRIVILEGES;
 注意事项：以管理员权限启动cmd，否则第五步报错。
