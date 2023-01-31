@@ -28,21 +28,38 @@ default-character-set=utf8mb4
 port=3306
 default-character-set=utf8mb4
 ```
-3.cmd进入bin文件夹下  
-4.mysqld --initialize --user=root --console 生成密码  
-5.mysqld install 安装  
-6.net start mysql 启动  
-7.mysql -u root -p 登录  
-8.ALTER USER 'root'@'localhost' IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY '新密码';  
-9.FLUSH PRIVILEGES;
+3.cmd进入bin文件夹下，生成密码
+```
+mysqld --initialize --user=root --console
+```
+4.安装为windows服务
+```
+mysqld install
+```
+5.启动
+```
+net start mysql
+```
+6.登录
+```
+mysql -u root -p
+```
+7.修改密码
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY '新密码';
+```
+8.刷新权限
+```
+FLUSH PRIVILEGES;
+```
 注意事项：以管理员权限启动cmd，否则第五步报错。
 
-# 导出默认配置 
+## 导出默认配置 
 ```
 running: mysqladmin variables
 not running: mysqld --verbose --help >> C:\\mysqld.txt
 ```
-# 附上默认配置 mysql-8.0.32
+## 附上默认配置 mysql-8.0.32
 ```
 abort-slave-event-count                                      0
 activate-all-roles-on-login                                  FALSE
