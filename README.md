@@ -5,10 +5,10 @@
 [mysqld]
 # 设置3306端口
 port=3306
-# 设置mysql的安装目录
-basedir=D:\EnvRun\mysql-8.0.18-winx64
+# 设置mysql的安装目录 windows 正斜杠单个 反斜杠要加双
+basedir=/
 # 设置mysql数据库的数据的存放目录
-datadir=D:\EnvRun\mysql-8.0.18-winx64\data
+datadir=\\data
 # 允许最大连接数
 max_connections=200
 # 允许连接失败的次数。
@@ -17,9 +17,6 @@ max_connect_errors=10
 character-set-server=utf8mb4
 # 创建新表时将使用的默认存储引擎
 default-storage-engine=INNODB
-# 默认使用“mysql_native_password”插件认证
-#mysql_native_password
-default_authentication_plugin=mysql_native_password
 [mysql]
 # 设置mysql客户端默认字符集
 default-character-set=utf8mb4
@@ -52,7 +49,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY '新密�
 ```
 FLUSH PRIVILEGES;
 ```
-注意事项：以管理员权限启动cmd，否则第五步报错。
+注意事项：以管理员权限启动cmd，否则报错。
 
 ## 导出默认配置 
 ```
